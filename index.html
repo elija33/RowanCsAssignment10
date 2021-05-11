@@ -6,6 +6,18 @@
 $(document).ready(function(){
   $("button").click(function(){
     $("p").css({"background-color": "yellow", "font-size": "200%"});
+    $("#div1").fadeOut();
+   $("#div2").fadeOut("slow");
+   $("#div3").fadeOut(3000);
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div4").fadeIn();
+    $("#div5").fadeIn("slow");
+    $("#div6").fadeIn(3000);
   });
 });
 </script>
@@ -19,14 +31,20 @@ $(document).ready(function(){
 <p style="background-color:#0000ff">This is a paragraph.</p>
 
 <p>This is a paragraph.</p>
-<button>Set multiple styles for p</button>
-
+<button>Set multiple styles for p</button><br><hr>
+<div>
 <!-- fadeOut -->
-<button>Click to fade out boxes</button><br><br>
 
 <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
 <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
-<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div><br>
+</div><br><hr>
 
+<!-- fadeI -->
+<li>Demonstrate fadeIn() with different parameters.</li>
+<div id="div4" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div6" style="width:80px;height:80px;background-color:blue;"></div><br>
+<button>Click to fade out boxes</button><br><br>
 </body>
 </html>
