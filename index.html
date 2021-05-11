@@ -9,15 +9,39 @@ $(document).ready(function(){
     $("#div1").fadeOut();
    $("#div2").fadeOut("slow");
    $("#div3").fadeOut(3000);
+   $("#div4").fadeIn();
+   $("#div5").fadeIn("slow");
+     $("#div6").fadeIn(3000);
+   $("q").toggle();
+   $("q").removeClass("intro");
   });
 });
 </script>
 <script>
 $(document).ready(function(){
   $("button").click(function(){
-    $("#div4").fadeIn();
-    $("#div5").fadeIn("slow");
-    $("#div6").fadeIn(3000);
+    $("img").attr("width", "500");
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({
+      left: '250px',
+      opacity: '0.5',
+      height: '150px',
+      width: '150px'
+    });
+  });
+});
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").hide("slow", function(){
+      alert("The paragraph is now hidden");
+    });
   });
 });
 </script>
@@ -46,5 +70,9 @@ $(document).ready(function(){
 <div id="div5" style="width:80px;height:80px;background-color:green;"></div><br>
 <div id="div6" style="width:80px;height:80px;background-color:blue;"></div><br>
 <button>Click to fade out boxes</button><br><br>
+<q class="intro" style="background-color:red;font-size: 100%;">This is a paragraph</q>
+<img src="subaru.jpg" alt="Pulpit Rock" width="284" height="213"><br><hr>
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
 </body>
 </html>
