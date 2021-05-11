@@ -7,6 +7,12 @@ $(document).ready(function(){
   $("button").click(function(){
     $("p").css({"background-color": "yellow", "font-size": "200%"});
   });
+  $(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000);
+  });
 });
 </script>
 </head>
@@ -19,8 +25,14 @@ $(document).ready(function(){
 <p style="background-color:#0000ff">This is a paragraph.</p>
 
 <p>This is a paragraph.</p>
-
 <button>Set multiple styles for p</button>
+
+<!-- fadeOut -->
+<button>Click to fade out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
 
 </body>
 </html>
